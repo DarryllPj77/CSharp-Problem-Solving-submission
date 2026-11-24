@@ -1,0 +1,306 @@
+
+Pseudocode Terms
+
+
+----------------------------------------------------------------
+
+Level 3: Sum of Even Numbers
+// Problem: Given an integer array, 
+// return the sum of all even numbers.
+
+START 
+
+INITIALIZE int[] exampleNum3 = input array
+INITIALIZE sum;
+
+FOR EACH num in exampleNum3
+	IF num is MOD 2 == 0
+		SET sum += num;
+	END IF
+END FOR
+
+RETURN sum
+
+END
+
+
+----------------------------------------------------------------
+
+Level 4: Find the Largest Number
+You are given an integer array. Your task is to find and return the largest number.
+
+Your task:
+Unlike previous exercises, you won't be counting or adding numbers.
+Instead, you need to remember the largest number you've encountered so far.
+Hint: Think about using a variable named maxNumber.
+
+START 
+
+INITIALIZE int[] exampleNum4 as Array
+
+INITIALIZE maxNumber = exampleNum4[0];
+
+FOR EACH num in exampleNum4
+	IF num > maxNumber
+		SET maxNumber = num
+	END IF
+	
+END FOR
+
+RETURN maxNumber
+
+END
+
+----------------------------------------------------------------
+
+Level 5: Find the Smallest Number
+
+Given an integer array, return the smallest number.
+
+START
+
+INITIALIZE int[] exampleNum5 as array
+
+INITIALIZE minNumber = exampleNum5[0]
+
+FOR EACH num in exampleNum5
+	IF num < minNumber
+		minNumber = num
+	END IF
+END FOR
+
+RETURN minNumber
+
+END
+
+----------------------------------------------------------------
+
+Level 6: Count Positive and Negative Numbers
+
+You are given an integer array containing positive numbers, negative numbers, and zeros.
+
+Your task is to count positive and negative numbers separately.
+
+START 
+
+INITIALIZE int[] exampleNum6 as array
+
+INITIALIZE positiveCount = 0;
+INITIALIZE negativeCount = 0;
+
+FOR EACH num in exampleNum6
+	IF num > 0
+		INCREMENT positiveCount
+	ELSE IF num < 0
+		INCREMENT negativeCount
+	END IF
+END FOR
+
+RETURN (positiveCount, negativeCount)
+
+END
+
+----------------------------------------------------------------
+
+Level 7: Count Occurrences of a Number
+You are given an integer array and a target number.
+Your task is to count how many times the target number appears in the array.
+
+Input:
+numbers = [3, 5, 3, 8, 3, 9, 5]
+target = 3
+
+
+Output: 3
+
+START
+
+INITIALIZE int[] exampleNum7 as array
+
+INITIALIZE target = 3;
+SET targetCount = 0;
+
+FOR i = 0 TO exampleNum7.Length - 1
+	IF exampleNum7[i] == target
+		INCREMENT targetCount
+	END IF
+END FOR
+
+RETURN targetCount
+
+END
+
+----------------------------------------------------------------
+
+Level 8: Find the First Occurrence
+
+You are given an integer array and a target number.
+Your task is to return the index of the first occurrence of the target.
+
+If the target doesn't exist, return -1.
+Input:
+numbers = [5, 8, 3, 9, 3, 7]
+target = 3
+
+Output: 2
+
+The target 3 appears at indices 2 and 4, but we only want the first occurrence, 
+which is index 2.
+
+
+START
+
+INITIALIZE int[] exampleNum8 as array
+
+INITIALIZE target = 3
+
+FOR i = 0 TO exampleNum8.Length - 1
+	IF exampleNum8[i] == target
+		RETURN i
+	END IF	
+END FOR
+
+RETURN -1
+
+END
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
