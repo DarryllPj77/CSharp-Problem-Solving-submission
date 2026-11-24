@@ -82,6 +82,7 @@ namespace LeetCodeSolutions
             int result7 = Solutions.CountOccurrencesOfNum(exampleNum7);
             Console.WriteLine("Level 7: Count Occurrences of a Number: " + result7);
 
+            // Complexity: O(n) time, O(1) extra space.
 
             #endregion
 
@@ -92,6 +93,9 @@ namespace LeetCodeSolutions
             int result8 = Solutions.FindTheFirstOccurrence(exampleNum8);
             Console.WriteLine("Level 8: Find the First Occurrence: " + result8 + " element value: " + exampleNum8[result8]);
 
+            // Time: O(n) worst case; O(1) best case.
+            // Space: O(1).
+
             #endregion
 
             #region -- Level 9: Find the Last Occurrence -- 
@@ -100,7 +104,9 @@ namespace LeetCodeSolutions
 
             int result9 = Solutions.FindTheLastOccurrence(exampleNum9);
             Console.WriteLine("Level 9: Find the Last Occurrence: " + result9);
-
+        
+            //Time: O(n) — Every element is checked.
+            //Space: O(1) — Only a few variables are stored.
 
             #endregion
         }
