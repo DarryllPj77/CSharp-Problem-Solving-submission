@@ -92,6 +92,15 @@ namespace LeetCodeSolutions
             int result8 = Solutions.FindTheFirstOccurrence(exampleNum8);
             Console.WriteLine("Level 8: Find the First Occurrence: " + result8 + " element value: " + exampleNum8[result8]);
 
+            #endregion
+
+            #region -- Level 9: Find the Last Occurrence -- 
+
+            int[] exampleNum9 = { 5, 3, 8, 3, 9, 3, 7 };
+
+            int result9 = Solutions.FindTheLastOccurrence(exampleNum9);
+            Console.WriteLine("Level 9: Find the Last Occurrence: " + result9);
+
 
             #endregion
         }

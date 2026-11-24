@@ -139,5 +139,24 @@
 
             return -1;
         }
+
+        public static int FindTheLastOccurrence(int[] numbers)
+        {
+            //           0  1  2  3  4  5  6  index visualizer
+            //numbers = [5, 3, 8, 3, 9, 3, 7]
+            int target = 3;
+            int lastIndex = -1;
+
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                if (numbers[i] == target)
+                {
+                    lastIndex = i;
+                }
+            }
+
+            return lastIndex;
+        }
+            
     }
 }
