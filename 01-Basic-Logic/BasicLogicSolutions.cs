@@ -142,7 +142,7 @@
 
         public static int FindTheLastOccurrence(int[] numbers)
         {
-            //           0  1  2  3  4  5  6  index visualizer
+            //  i =      0  1  2  3  4  5  6  index visualizer
             //numbers = [5, 3, 8, 3, 9, 3, 7]
             int target = 3;
             int lastIndex = -1;
@@ -157,6 +157,31 @@
 
             return lastIndex;
         }
-            
+
+        public static int CountNumbersGreaterThanAverage(int[] numbers)
+        {
+            int average = 0;
+            int sum = 0;
+            int count = 0;
+
+            foreach (var num in numbers)
+            {
+                sum += num;
+            }
+
+            average = sum / numbers.Length;
+
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                if (numbers[i] > average)
+                {
+                    count++;
+                }
+            }
+
+            return count;
+        }
+
+
     }
 }

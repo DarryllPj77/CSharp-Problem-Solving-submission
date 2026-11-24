@@ -1,3 +1,5 @@
+using System.Timers;
+
 namespace LeetCodeSolutions
 {
     public static class BasicLogicRunner
@@ -18,7 +20,6 @@ namespace LeetCodeSolutions
                 - Space: O(1) — You only create one additional variable, count.
              */
             #endregion
-
 
             #region -- Count Numbers Greater Than 10 --
             int[] exampleNum2 = { 5, 12, 8, 20, 15, 3 };
@@ -104,9 +105,22 @@ namespace LeetCodeSolutions
 
             int result9 = Solutions.FindTheLastOccurrence(exampleNum9);
             Console.WriteLine("Level 9: Find the Last Occurrence: " + result9);
-        
+
             //Time: O(n) — Every element is checked.
             //Space: O(1) — Only a few variables are stored.
+
+            #endregion
+
+            #region -- Level 10: Count Numbers Greater Than the Average --
+
+            int[] exampleNum10 = { 2, 4, 6, 8, 10 };
+
+            int result10 = Solutions.CountNumbersGreaterThanAverage(exampleNum10);
+            Console.WriteLine("Level 10: Count Numbers Greater Than the Average: " + result10);
+
+            // Complexity
+            // -Time: O(n) — Two separate loops, each traversing the array.
+            // -Space: O(1) — Only a few variables.
 
             #endregion
         }
