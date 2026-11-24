@@ -32,6 +32,13 @@ The repository is organized into the following categories for future exercises:
 
 The current exercises remain in the existing .NET project files so that the original code, comments, pseudocode, and learning history are preserved.
 
+## Project Structure
+
+- `Program.cs` selects a category through a fixed `switch` value.
+- Each category has its own runner that calls the solution methods for that category.
+- `01-Basic-Logic/BasicLogicRunner.cs` contains the callers for the current basic logic exercises.
+- `01-Basic-Logic/BasicLogicSolutions.cs` contains the current solution implementations.
+
 ## Exercise Progress
 
 | # | Exercise | Status | Current implementation | Complexity |
@@ -45,7 +52,7 @@ The current exercises remain in the existing .NET project files so that the orig
 | 7 | Count Occurrences of a Number | Completed | `Solutions.CountOccurrencesOfNum` | O(n) time, O(1) space |
 | 8 | Find the First Occurrence | Completed in the current workspace | `Solutions.FindTheFirstOccurrence` | O(n) time, O(1) space |
 
-Pseudocode and learning notes are preserved in `01-Basic-Logic/BasicLogicPseudocode.txt`. The current `Program.cs` demonstrates the existing exercises.
+Pseudocode and learning notes are preserved in `01-Basic-Logic/BasicLogicPseudocode.txt`. The current `BasicLogicRunner` demonstrates the existing exercises.
 
 ## Exercise Documentation Format
 
