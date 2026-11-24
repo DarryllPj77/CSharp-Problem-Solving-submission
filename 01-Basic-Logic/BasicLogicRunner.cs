@@ -123,6 +123,15 @@ namespace LeetCodeSolutions
             // -Space: O(1) — Only a few variables.
 
             #endregion
+
+
+            #region -- Level 11: Count Adjacent Equal Numbers -- 
+
+            int[] exampleNum11 = { 2, 2, 5, 5, 5, 8, 3, 3 };
+            int result11 = Solutions.CountAdjacentEqualNumbers(exampleNum11);
+            Console.WriteLine("Level 11: Count Adjacent Equal Numbers: " + result11);
+
+            #endregion
         }
     }
 }

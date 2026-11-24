@@ -249,6 +249,38 @@ END
 
 ----------------------------------------------------------------
 
+Level 11: Count Adjacent Equal Numbers
+
+Understanding the Question, Scenario, and Inputs
+You are given an integer array. Count how many times two neighboring numbers are equal.
+
+Example:
+Input:  [2, 2, 5, 5, 5, 8, 3, 3]
+Output: 4
+
+
+An adjacent pair means two elements positioned directly beside each other.
+
+For example, numbers[0] and numbers[1] are adjacent.
+
+START
+
+INITIALIZE int[] numbers as array
+
+INITIALIZE adjacentCount = 0;
+
+FOR i = 0 TO numbers.Length - 1
+
+	IF numbers[i] == number[i + 1]
+		INCREMENT adjacentCount
+	END IF
+	
+END FOR
+
+RETURN adjacentCount
+
+END
+
 ----------------------------------------------------------------
 
 ----------------------------------------------------------------

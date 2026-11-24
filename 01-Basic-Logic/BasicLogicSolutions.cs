@@ -182,6 +182,25 @@
             return count;
         }
 
+        public static int CountAdjacentEqualNumbers(int[] numbers)
+        {
+            //    i =   0  1  2  3  4  5  6  7
+            // Input:  [2, 2, 5, 5, 5, 8, 3, 3]
+            // Output: 4
+
+            int adjacentCount = 0;
+
+            for (int i = 0; i < numbers.Length - 1; i++)
+            {
+                if (numbers[i] == numbers[i + 1])
+                {
+                    adjacentCount++;
+                }
+            }
+
+            return adjacentCount;
+        }
+
 
     }
 }
