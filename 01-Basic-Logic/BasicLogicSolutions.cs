@@ -200,7 +200,23 @@
 
             return adjacentCount;
         }
+        
+        public static int CountIncreasingAdjacentPairs(int[] numbers)
+        {
+            // Input:  [2, 5, 3, 7, 9, 4, 8]
+            // Output: 4
+            int valueIncreaseCount = 0;
 
+            for (int i = 0; i < numbers.Length - 1; i++)
+            {
+                if(numbers[i] < numbers[i + 1])
+                {  
+                    valueIncreaseCount++;
+                }
+            }
+
+            return valueIncreaseCount;
+        }
 
     }
 }

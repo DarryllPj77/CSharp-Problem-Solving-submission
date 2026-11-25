@@ -1,3 +1,4 @@
+using System.Diagnostics.Metrics;
 using System.Timers;
 
 namespace LeetCodeSolutions
@@ -131,6 +132,20 @@ namespace LeetCodeSolutions
             int result11 = Solutions.CountAdjacentEqualNumbers(exampleNum11);
             Console.WriteLine("Level 11: Count Adjacent Equal Numbers: " + result11);
 
+            // Complexity:
+            // - Time: O(n)
+            // - Space: O(1)
+
+            #endregion
+
+            #region -- Level 12: Count Increasing Adjacent Pairs --
+            int[] exampleNum12 = { 2, 5, 3, 7, 9, 4, 8 };
+            int result12 = Solutions.CountIncreasingAdjacentPairs(exampleNum12);
+            Console.WriteLine("Level 12: Count Increasing Adjacent Pairs: " + result12);
+
+            // Complexity Analysis
+            // -Time: O(n) — Each neighboring pair is compared once.
+            // -Space: O(1) — Only one counter variable is used.
             #endregion
         }
     }
