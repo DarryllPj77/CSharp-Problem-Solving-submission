@@ -316,6 +316,42 @@ RETURN valueIncreaseCount
 END
 
 ----------------------------------------------------------------
+Level 13: Count Decreasing Adjacent Pairs
+
+Concepts: Arrays, Loops, Conditions, Neighbor Comparison
+Understanding the Question, Scenario, and Inputs
+You are given an integer array. Your task is to count how many times a number decreases compared to the number immediately before it.
+
+Example 1:
+Input:  [9, 5, 7, 3, 2, 8, 4]
+Output: 4
+
+Example 2:
+Input:  [1, 3, 5, 7, 9]
+Output: 0
+
+There are no decreasing adjacent pairs.
+Explanation: There are four decreases: 9 → 5, 7 → 3, 3 → 2, and 8 → 4
+
+START
+
+INITIALIZE int[] numbers as array
+
+INITIALIZE decreaseCount = 0
+
+FOR i = 0 TO numbers.Length - 1
+
+	IF numbers[i] > numbers[i + 1]
+		INCREMENT decreaseCount
+	END IF
+	
+END FOR
+
+RETURN decreaseCount
+
+END
+
+
 
 ----------------------------------------------------------------
 
@@ -342,6 +378,7 @@ END
 ----------------------------------------------------------------
 
 ----------------------------------------------------------------
+
 
 
 

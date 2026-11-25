@@ -147,6 +147,20 @@ namespace LeetCodeSolutions
             // -Time: O(n) — Each neighboring pair is compared once.
             // -Space: O(1) — Only one counter variable is used.
             #endregion
+
+            #region -- Level 13: Count Decreasing Adjacent Pairs
+
+            int[] exampleNum13 = { 9, 5, 7, 3, 2, 8, 4 };
+            int result13 = Solutions.CountDecreasingAdjacentPairs(exampleNum13);
+            Console.WriteLine("Level 13: Count Decreasing Adjacent Pairs: " + result13);
+
+            #endregion
+
+            #region
+
+            #endregion
+
+
         }
     }
 }

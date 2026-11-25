@@ -218,5 +218,21 @@
             return valueIncreaseCount;
         }
 
+        public static int CountDecreasingAdjacentPairs(int[] numbers)
+        {
+            int decreaseCount = 0;
+
+            for (int i = 0; i < numbers.Length - 1; i++)
+            {
+                if (numbers[i] > numbers[i + 1])
+                {
+                    decreaseCount++;
+                }
+            }
+
+            return decreaseCount;
+        }
+
+
     }
 }
