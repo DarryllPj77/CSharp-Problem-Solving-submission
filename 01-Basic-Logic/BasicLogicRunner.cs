@@ -1,4 +1,5 @@
 using System.Diagnostics.Metrics;
+using System.Reflection;
 using System.Timers;
 
 namespace LeetCodeSolutions
@@ -71,7 +72,7 @@ namespace LeetCodeSolutions
 
             (int result6Positive, int result6Negative) = Solutions.CountPositiveAndNegativeNum(exampleNum6);
 
-            Console.WriteLine("Level 6: Count Positive and Negative Numbers: " + (result6Positive,result6Negative));
+            Console.WriteLine("Level 6: Count Positive and Negative Numbers: " + (result6Positive, result6Negative));
 
             // Complexity: O(n) time, O(1) extra space.
 
@@ -154,10 +155,19 @@ namespace LeetCodeSolutions
             int result13 = Solutions.CountDecreasingAdjacentPairs(exampleNum13);
             Console.WriteLine("Level 13: Count Decreasing Adjacent Pairs: " + result13);
 
+            // Complexity:
+            // - Time: O(n)
+            // - Space: O(1)
             #endregion
 
             #region
 
+            int[] exampleNum14 = { 2, 7, 3, 9, 4, 8, 1, 4,3,5,2,7};
+            int result14 = Solutions.CountLocalMaximums(exampleNum14);
+            Console.WriteLine("Level 14: Count Local Maximums: " + result14);
+
+            // Time: O(n) — Each group of three neighboring elements is checked once.
+            // Space: O(1) — Only one counter is used.
             #endregion
 
 

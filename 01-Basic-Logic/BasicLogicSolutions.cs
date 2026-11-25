@@ -233,6 +233,22 @@
             return decreaseCount;
         }
 
+        public static int CountLocalMaximums(int[] numbers)
+        {
+            int count = 0;
+
+            for (int i = 0; i < numbers.Length - 2; i++)
+            {
+                if (numbers[i + 1] > numbers[i] && numbers[i + 1] > numbers[i + 2])
+                {
+                    count++;
+                }
+            }
+
+            return count;
+        }
+
+
 
     }
 }
